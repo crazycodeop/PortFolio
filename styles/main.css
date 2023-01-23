@@ -6,6 +6,7 @@
     --mainLinkColor-light:#eb1555;
     --mainBorderColor-light:rgb(218, 218, 218);
     --mainBgColor-light:rgb(249, 250,251);
+    --shadow-color: rgb(255, 255, 255);
 
     --mainTextColor-dark:#fff;
     --secondaryTextColor-dark:#adb0b1;
@@ -29,6 +30,7 @@
 }
 
 body{
+    background-color:hsl(220deg 100% 80%);
     background-color: var(--mainBgColor);
 }
 
@@ -76,7 +78,8 @@ li{
     line-height: 1em;
 }
 
-#profile-pic{
+#profile--pic{
+    filter: drop-shadow(1px 2px 8px var(--shadow-color));
     border-radius: 50%;
     width: 150px;
     height: 150px;
